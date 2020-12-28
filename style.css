@@ -64,3 +64,9 @@ form {
        between the labels and their text fields */
     margin-left: .5em;
   }
+
+  .container{
+      display:flex;
+      flex-direction: column;
+  }
+  
