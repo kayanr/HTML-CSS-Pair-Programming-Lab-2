@@ -17,6 +17,14 @@ form {
   
   form li + li {
     margin-top: 1em;
+    border: 1px solid pink;
+  }
+
+  form li {
+   
+    border: 1px solid pink;
+    background: rgba(237, 245, 252, 0.4);
+    border-radius: .25em;
   }
   
   label {
@@ -38,6 +46,7 @@ form {
   
     /* Match form field borders */
     border: 1px solid #999;
+    border-radius: .25em;
   }
   
   input:focus,
