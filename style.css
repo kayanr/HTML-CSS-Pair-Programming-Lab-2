@@ -1,81 +1,112 @@
 form {
-    /* Center the form on the page */
-    margin: 0 auto;
-    width: 500px;
-    /* Form outline */
-    padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
-    background-color: #9aba2b;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  form li + li {
-    margin-top: 1em;
-    border: 1px solid pink;
-  }
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 500px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  background-color: #9aba2b;
+}
 
-  form li {
-   
-    border: 1px solid pink;
-    background: rgba(237, 245, 252, 0.4);
-    border-radius: .25em;
-  }
-  
-  label {
-    /* Uniform size & alignment */
-    display: inline-block;
-    width: 90px;
-    text-align: left;
-  }
-  
-  input,
-  textarea {
-    /* To make sure that all text fields have the same font settings
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+  border: 1px solid white;
+}
+
+form li {
+  border: 1px solid white;
+  background: rgba(237, 245, 252, 0.4);
+  border-radius: 0.25em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: left;
+}
+
+.section1 input,
+.section2 input,
+.cardNumber input,
+.sCode input,
+.noCard input,
+textarea {
+  /* To make sure that all text fields have the same font settings
        By default, textareas have a monospace font */
-    font: 1em sans-serif;
-  
-    /* Uniform text field size */
-    width: 350px;
-    box-sizing: border-box;
-  
-    /* Match form field borders */
-    border: 1px solid #999;
-    border-radius: .25em;
-  }
-  
-  input:focus,
-  textarea:focus {
-    /* Additional highlight for focused elements */
-    border-color: #000;
-  }
-  
-  textarea {
-    /* Align multiline text fields with their labels */
-    vertical-align: top;
-  
-    /* Provide space to type some text */
-    height: 5em;
-  }
-  
-  .button {
-    /* Align buttons with the text fields */
-    padding-left: 90px; /* same size as the label elements */
-  }
-  
-  button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
-    margin-left: .5em;
-  }
+  font: 1em sans-serif;
 
-  .container{
-      display:flex;
-      flex-direction: column;
-  }
+  /* Uniform text field size */
+  width: 350px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+  border-radius: 0.25em;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  /*padding-left: 90px; same size as the label elements */
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /*margin: 4px 2px;*/
+  /*margin: auto;*/
+  cursor: pointer;
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+  margin-left: 2.75em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button5 {
+  border-radius: 25px;
+}
+
+.ending {
+  margin: auto;
+  padding-top: 15px;
+}
+
+
+
+input.cardtypes {
+  /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+  font-size: small;
   
+}

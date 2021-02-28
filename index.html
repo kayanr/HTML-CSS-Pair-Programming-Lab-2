@@ -8,24 +8,24 @@
   </head>
   <body>
     <form action="" class="container">
-      <div>
+      <div class="section1">
         <h3>Step 1: Your details</h3>
         <ul>
           <li>
             <label for="name">Name</label>
-            <input type="text" id="name" name="user_name" />
+            <input type="text" id="name" name="user_name" placeholder="First and last name"  />
           </li>
           <li>
             <label for="mail">Email</label>
-            <input type="email" id="mail" name="user_email" />
+            <input type="email" id="mail" name="user_email" placeholder="example@domain.com"  />
           </li>
           <li>
             <label for="phone">Phone</label>
-            <input type="phone" id="phone" name="user_phone" />
+            <input type="phone" id="phone" name="user_phone" placeholder="Eg. +4475000000000" />
           </li>
         </ul>
       </div>
-      <div>
+      <div class="section2">
         <h3>Step 2: Delivery address</h3>
         <ul>
           <li>
@@ -45,19 +45,31 @@
       <div>
         <h3>Step 3: Card details</h3>
         <ul>
-          <li>
+          <li id="classType">
+            <label for="cardtype">Card type</label> <br>
+            <input class="cardtypes" type="radio" id="cardtype1" name="user_cardtype1" />
+            <label for="cardtype1">VISA</label>
+            <input class="cardtypes" type="radio" id="cardtype2" name="user_cardtype2" />
+            <label for="cardtype2">AmEx</label>
+            <input class="cardtypes"  type="radio" id="cardtype3" name="user_cardtype3" />
+            <label for="cardtype3">Mastercard</label>
+          </li>
+          
+          <li class="cardNumber">
             <label for="cardnumber">Card number</label>
             <input type="text" id="cardnumber" name="user_cardnumber" />
           </li>
-          <li>
+          <li class="sCode">
             <label for="scode">Security code</label>
             <input type="text" id="scode" name="user_scode" />
           </li>
-          <li>
+          <li class="noCard">
             <label for="nocard">Name on card</label>
-            <input type="text" id="nocard" name="user_nocard" />
+            <input type="text" id="nocard" name="user_nocard" placeholder="Exact name as on the card"/>
           </li>
         </ul>
+      </div >
+        <div class="ending"><button class="button button5">BUY IT!</button>
       </div>
     </form>
   </body>
